@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<h1> Traditional Korean Food.com merch sight</h1>
+
+</p>
+
+<a href="file:///C:/Users/Emma%20Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web%20dev/korean%20food.html">Return to home page </a><br/>
+
+<div> Cat eating noodles hoodie<p></p>
+<img src="C:/Users/Emma Davidson/OneDrive - Edinburgh Napier University/Desktop/web dev/the-merch.png"
+width= "300"
+height="300"></img>
+<p> Price: £30</p>
+<p></p>
+<p></p>
+<P> sizes</p>
+<p></p>
+<p></p>
+<p> S, M, L, XL, XXL, XXXL</p>
+</div>
+<div> puppycat stew hoodie<p></p>
+
+
+<img src="C:/Users/Emma Davidson/OneDrive - Edinburgh Napier University/Desktop/web dev/the-merch2.png"
+width= "300"
+height="300"></img>
+<p> Price: £30</p>
+<p></p>
+<p></p>
+<P> sizes</p>
+<p></p>
+<p></p>
+<p> S, M, L, XL, XXL, XXXL</p>
+</div>
+
+<style>
+
+.flex-container {
+  display: flex;
+  
+  width: 80px;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.flex-container > div {
+  background-color:#ea4747;
+  margin: 10px;
+  padding: 80px;
+  font-size: 15px;
+}
+
+body{background-color:#ffe599;}
+h1{background-color: #eef0e7;
+font-size: 40px;
+text-align:center;}
+div{background-color: #eef0e7;
+font-size:30px;}
+p{font-size:28px;}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<script>
+
+//Get the button
+//Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

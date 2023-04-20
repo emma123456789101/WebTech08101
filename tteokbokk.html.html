@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<h1> 떡볶이 Tteokbokki (spicy rice cakes)</h1>
+<div>
+<img src="C:/Users/Emma Davidson/OneDrive - Edinburgh Napier University/Desktop/web dev/tteokbokki image.jpg"
+width= "100"
+height="100"></img>
+</div>
+<div>
+<a href="file:///C:/Users/Emma%20Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web%20dev/the%20main%20page.html">Return to Main page</a><br />
+<a href="file:///C:/Users/Emma%20Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web%20dev/korean%20food.html">Return to home page </a><br />
+</div>
+<div class="flex-container">
+<div > INGREDIENTS FOR TTEOKBOKKI (SERVES 2):<p></p>
+MAIN:<p></p>
+<p></p>
+<p></p>
+350g / 12 ounces Korean rice cakes, separated<p></p>
+150g / 5.3 ounces Korean fish cakes, rinsed over hot water & cut into bite size pieces<p></p>
+2 cups Korean soup stock (dried kelp and dried anchovy stock), use this recipe<p></p>
+60g / 2 ounces onion, thinly sliced<p></p>
+TTEOKBOKKI SAUCE (MIX THESE IN A BOWL)<p></p>
+3 Tbsp gochujang (Korean chili paste)<p></p>
+1 1/2 Tbsp raw sugar<p></p>
+1 Tbsp soy sauce<p></p>
+1 tsp minced garlic<p></p>
+1 tsp gochugaru (Korean chili flakes)<p></p>
+<p></p>
+<p></p>
+GARNISH<p></p>
+1 tsp roasted sesame seeds<p></p>
+1 tsp sesame oil<p></p>
+1 stalk green onion, finely chopped</div>
+
+
+<div >Instructions:<p></p>
+<p></p>
+1.	Soak the rice cakes for about 20 minutes  to soften them.(can be longer for refrigerated rice cakes).<p></p>
+<p></p>
+2.	Cut the fish cake, cabbage, and spring onions into about 2-inch long pieces.<p></p>
+<p></p>
+3.	To a large pan, add the dried anchovies, dried kelp, and onion along with 5 cups of water. Bring it to a boil over medium high heat, and continue to boil for 10 minutes. Reduce it close to medium if your heat is very high. Remove the anchovies, dasima and onion from the broth.<p></p>
+<p></p>
+4.	Add the sauce ingredients to the pan, stirring to dissolve the red chili pepper paste (gochujang).<p></p>
+<p></p>
+5.	Add the rice cakes. Boil until the rice cakes become very soft and the sauce is thickened, about 8 - 10 minutes. This can take longer, depending on your rice cakes. Stir frequently so the rice cakes don't stick to the bottom of the pan.<p></p>
+<p></p>
+6.	Drop the vegetables, garlic, and fish cakes in. Continue to boil, stirring occasionally, for an additional 4 - 6 minutes. Depending on rice cakes, you may need more time to reach a desired level of softness. Add more broth or water as necessary. Drop in the scallions and boiled eggs with 2 to 3 minutes remaining. Taste the sauce, adjust the seasoning if needed and add cheese if you want too. Serve hot.<p></p>
+<p></p>
+</div>
+<div>
+<img src="file:///C:/Users/Emma Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web dev/tteokbokki1.jpeg"
+width= "200"
+height="200"></img>
+<img src="file:///C:/Users/Emma Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web dev/tteokbokki2.jpeg"
+width= "200"
+height="200"></img>
+<img src="file:///C:/Users/Emma Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web dev/tteokbokki3.jpeg"
+width= "200"
+height="200"></img>
+
+<img src="file:///C:/Users/Emma Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web dev/tteokbokki4.jpeg"
+width= "200"
+height="200"></img>
+<img src="file:///C:/Users/Emma Davidson/OneDrive%20-%20Edinburgh%20Napier%20University/Desktop/web dev/tteokbokki5.jpeg"
+width= "200"
+height="200"></img>
+<img src="C:/Users/Emma Davidson/OneDrive - Edinburgh Napier University/Desktop/web dev/tteokbokki image.jpg"
+width= "200"
+height="200"></img>
+</div>
+
+
+<style>
+
+body{
+background-color:#ffe599;
+}
+h1{background-color: #eef0e7;
+font-size: 40px;
+text-align:center;}
+
+
+.flex-container {
+  display: flex;
+  background-color:#ffe599;
+  width: 80px;
+  border: 15px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.flex-container > div {
+  background-color: #eef0e7;
+  margin: 10px;
+  padding: 80px;
+  font-size: 15px;
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+<script>
+
+//Get the button
+//Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
+
